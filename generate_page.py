@@ -15,3 +15,4 @@ output = template.render(books=books)
 # Save the rendered HTML to a file
 with open('books_wishlist.html', 'w') as file:
     file.write(output)
+print("Generated html static page.")
