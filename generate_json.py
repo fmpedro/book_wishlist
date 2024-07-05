@@ -42,7 +42,7 @@ def get_book_info(query):
             author_url = s2.get('href')
 
             cover_url = s3.get('src')
-            cover_url = re.sub(r'\._[0-9A-Z]{4}', '', cover_url).replace('._','')
+            cover_url = re.sub(r'_[0-9A-Z]{4}', '', cover_url).replace('._','')
 
             rating = s4.text.strip().split('\n')[0]
 
