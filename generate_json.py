@@ -66,6 +66,7 @@ with open("./references/list_of_books.txt") as f:
     list_of_books = f.read()
 
 list_of_books = list_of_books.split('\n')
+list_of_books = [book for book in list_of_books if book]
 
 # Gather information from listed books
 books_info = []
