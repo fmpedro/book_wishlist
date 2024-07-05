@@ -72,7 +72,7 @@ list_of_books = [book for book in list_of_books if book]
 books_info = []
 for book in list_of_books:
     books_info.append(get_book_info(book))
-    print(f"Processed query {book}")
+    print(f"Processed query '{book}'")
 
 # Save information into json file
 with open("./references/books_info.json", "w") as f:
